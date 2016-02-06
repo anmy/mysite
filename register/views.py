@@ -18,3 +18,5 @@ class UserRegistrationView(AnonymousRequiredMixin, FormView):
         form.save()
         return FormView.form_valid(self, form)
 
+class UserRegistrationSuccessView(TemplateView):
+    template_name = "success.html"

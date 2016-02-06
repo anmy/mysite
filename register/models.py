@@ -33,6 +33,7 @@ class MyUserManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
+
 class User(AbstractBaseUser):
     """
     Extends the default User profiles of Django. The fields of this model can be obtained by the

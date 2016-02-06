@@ -125,3 +125,12 @@ STATICFILES_DIRS = (MEDIA_ROOT,)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'home'
+RECOVER_ONLY_ACTIVE_USERS = False
+ACCOUNT_ACTIVATION_DAYS = 2
+ANONYMOUS_USER_ID = -1
+AUTH_USER_MODEL = "register.User"
+SITE_ID = 1
