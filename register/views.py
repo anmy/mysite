@@ -9,6 +9,9 @@ from register.forms import *
 class Home(TemplateView):
     template_name= "index.html"
 
+class UserDashboardView(TemplateView):
+    template_name= "dash.html"
+
 class UserRegistrationView(AnonymousRequiredMixin, FormView):
     template_name = "signup.html"
     authenticated_redirect_url = reverse_lazy(u"home")
